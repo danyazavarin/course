@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,KAAM;EACJ,QAAQ,EAAE,QAAQ;EAClB,IAAI,EALC,GAAG;EAMR,GAAG,EALC,GAAG",
+"sources": ["navigation.scss"],
+"names": [],
+"file": "navigation.css"
+}
