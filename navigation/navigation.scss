@@ -1,6 +1,7 @@
 // general
 
 $primary-bg: #1F75CB;
+$hover-bg: #1068BF;
 $secondary: #FFFFFF;
 $primary-font: #1C1C1C;
 $disabled-font: #8E8E8E;
@@ -44,11 +45,16 @@ body {
 
 .header__btn {
   @extend %paddings;
+  cursor: pointer;
   text-decoration: none;
   border: 1px solid $secondary;
   border-radius: 4px;
   color: $secondary;
   line-height: 18px;
+
+  &:hover:not(.header__btn_active) {
+    background-color: #1068BF;
+  }
 }
 
 .header__btn_active {
@@ -59,6 +65,7 @@ body {
 .header__profile {
   @include display(center);
   @extend %paddings;
+  cursor: pointer;
   gap: 8px;
   height: 42px;
 }

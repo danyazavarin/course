@@ -28,11 +28,14 @@ body {
   height: 42px; }
 
 .header__btn {
+  cursor: pointer;
   text-decoration: none;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
   color: #FFFFFF;
   line-height: 18px; }
+  .header__btn:hover:not(.header__btn_active) {
+    background-color: #1068BF; }
 
 .header__btn_active {
   background-color: #FFFFFF;
@@ -42,6 +45,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   gap: 8px;
   height: 42px; }
 
