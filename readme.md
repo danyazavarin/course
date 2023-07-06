@@ -41,5 +41,5 @@ sudo gem install sass
 ### Настройка
 
 Чтобы использовать Sass в WebStorm:<br>
-`File > Settings`, в открывшемся окошке перейти в раздел `Tools > File Watchers`, нажать на зеленый плюсик справа и выбрав
+`File > Settings`, в открывшемся окошке перейти в раздел `Tools > File Watchers`, нажать на зеленый плюсик справа и выбрать
 `Sass\SCSS`.
