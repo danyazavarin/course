@@ -1,8 +1,72 @@
-$left: 50%;
-$top: 50%;
+// general
 
-.dust {
-  position: absolute;
-  left: $left;
-  top: $top;
+$primary-bg: #1F75CB;
+$secondary: #FFFFFF;
+$primary-font: #1C1C1C;
+$disabled-font: #8E8E8E;
+
+@mixin display($main) {
+  display: flex;
+  justify-content: $main;
+  align-items: center;
+}
+
+%paddings {
+  padding: 12px 16px;
+}
+
+//main
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: $primary-font;
+}
+
+.header {
+  @include display(flex-end);
+  background-color: $primary-bg;
+  height: 42px;
+  padding: 24px;
+  gap: 24px;
+}
+
+.header__list {
+  @include display(center);
+  gap: 24px;
+  list-style: none;
+  height: 42px;
+}
+
+.header__btn {
+  @extend %paddings;
+  text-decoration: none;
+  border: 1px solid $secondary;
+  border-radius: 4px;
+  color: $secondary;
+  line-height: 18px;
+}
+
+.header__btn_active {
+  background-color: $secondary;
+  color: $primary-font;
+}
+
+.header__profile {
+  @include display(center);
+  @extend %paddings;
+  gap: 8px;
+  height: 42px;
+}
+
+.header__logo, .header__dropdown {
+  height: 24px;
+}
+
+.header__logo img {
+  border-radius: 24px;
 }
