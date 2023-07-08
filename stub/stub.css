@@ -4,8 +4,7 @@
   background-color: #1F75CB;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
-  color: #FFFFFF;
-  line-height: 18px; }
+  color: #FFFFFF; }
   .stub__btn:hover:not(.header__btn_active) {
     background-color: #1068BF; }
 

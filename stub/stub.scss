@@ -19,7 +19,6 @@ $disabled-font: #8E8E8E;
   border: 1px solid $secondary;
   border-radius: 4px;
   color: $secondary;
-  line-height: 18px;
 
   &:hover:not(.header__btn_active) {
     background-color: $hover-bg;
