@@ -1,5 +1,13 @@
-.header__btn, .header__profile {
-  padding: 12px 16px; }
+.header__btn {
+  padding: 12px 16px;
+  cursor: pointer;
+  background-color: #1F75CB;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  color: #FFFFFF;
+  line-height: 18px; }
+  .header__btn:hover:not(.header__btn_active) {
+    background-color: #1068BF; }
 
 body {
   margin: 0;
@@ -27,16 +35,6 @@ body {
   list-style: none;
   height: 42px; }
 
-.header__btn {
-  cursor: pointer;
-  text-decoration: none;
-  border: 1px solid #FFFFFF;
-  border-radius: 4px;
-  color: #FFFFFF;
-  line-height: 18px; }
-  .header__btn:hover:not(.header__btn_active) {
-    background-color: #1068BF; }
-
 .header__btn_active {
   background-color: #FFFFFF;
   color: #1C1C1C; }
@@ -45,6 +43,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 12px 16px;
   cursor: pointer;
   gap: 8px;
   height: 42px; }
